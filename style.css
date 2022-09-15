@@ -209,7 +209,7 @@ main{
 
 .subjects__wrapper{
   max-width: 824px;
-  margin: 24px auto;
+  margin: 32px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -248,6 +248,12 @@ main{
   padding: 0 8px;
 }
 
+@media screen and (max-width: 1023px) {
+  .subjects__wrapper{
+    gap: 24px;
+  }
+
+}
 
 @media screen and (max-width: 900px) {
   .marathon{
@@ -267,8 +273,8 @@ main{
   }
 
   .subject__card {
-    width: calc(100vw / 3 - 48px);
-    height: calc(100vw / 3 - 48px);
+    width: calc(100vw / 3 - 40px);
+    height: calc(100vw / 3 - 40px);
   }
 
   .card__content {
@@ -331,10 +337,6 @@ main{
 
   .card__content-btn_type_done{
     gap: 0;
-  }
-
-  .subjects__wrapper{
-    gap: 24px;
   }
 
   .subject__card {
