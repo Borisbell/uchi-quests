@@ -1,0 +1,291 @@
+@font-face{
+	font-family: 'FactorA';
+	src: url('../target_quests/fonts/Factor-A-Regular-Web.woff');
+  font-weight: 400;
+}
+
+@font-face{
+	font-family: 'FactorA';
+	src: url('/fonts/Factor-A-Bold-Web.woff');
+  font-weight: 600;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #F0EEFB;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  min-width: 320px;
+}
+
+header{
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 32px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marathon{
+  width: 824px;
+  height: 188px;
+  background: #289FDC;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.quests__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:0;
+  align-items: center;
+}
+
+/* Tabs */
+.quests__tabs{
+  font-family: 'FactorA', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  align-self: flex-start;
+}
+
+.quests__tabs_list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.quests__tabs-item{
+  padding: 16px 20px 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(47, 47, 69, 0.6);
+  border-radius: 16px 16px 0px 0px;
+}
+
+.quests__tabs-item-zavr{
+  background-color: #C5E9FD;
+}
+
+.quests__tabs-item_state_active{
+  padding: 16px 20px 8px;
+  background-color: rgba(255, 255, 255, 1);
+  color: #2F2F45;;
+}
+
+/* Tabs  End*/
+
+.quests{
+  box-sizing: border-box;
+  width: 824px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  gap: 32px;
+  background: #FFFFFF;
+  border-radius: 0 32px 32px 32px;
+}
+
+/* Всё за день */
+
+.quests__all-for-the-day{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.all-for-the-day__content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.all-for-the-day__header{
+  margin: 0;
+  padding: 0;
+  font-family: 'FactorA', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.progress-bar{
+  height: 6px;
+  width: 100%;
+  background: #87D34C;
+  border-radius: 12px;
+}
+
+
+.quests__daily-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap:32px;
+  align-items: stretch;
+}
+
+/* Карточка квеста */
+
+.quests__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  width: 33%;
+}
+
+.card__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:32px;
+}
+
+.card__content-header{
+  margin: 0;
+  padding: 0;
+  font-family: 'FactorA', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;  
+  /* word-break: break-all; */
+}
+
+.card__content-btn{
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 48px;
+  background: #765FDE;
+  border-radius: 16px;
+  font-family: 'FactorA', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.card__content-btn_type_secondary{
+  background: #EAE6FF;
+  color: #765FDE;
+}
+
+.card__content-btn_type_done{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: transparent;
+  color: rgba(47, 47, 69, 0.4);
+  border: 1px solid rgba(47, 47, 69, 0.4);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .marathon{
+    width: 100%;
+  }
+
+  .quests__wrapper{
+    width: 100%;
+  }
+
+  .quests{
+    width: 100%;
+  }
+
+  main{
+    padding: 0 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marathon{
+    margin: 0;
+    margin-bottom: 24px;
+    border-radius: 0;
+  }
+
+  main{
+    padding: 0;
+  }
+
+  .quests__tabs{
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+  }
+
+  .quests{
+    margin: 0;
+    padding: 24px 16px;
+    border-radius: 0;
+  }
+
+  .quests__daily-wrapper{
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .quests__card {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card__content{
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .card__content-btn{
+    width: 120px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+  }
+
+  .card__content-btn_type_done{
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .marathon{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+    border-radius: 0;
+  }
+
+  .quests{
+    padding: 16px;
+  }
+
+  .card__content-btn{
+    
+  }
+}

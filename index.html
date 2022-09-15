@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <div class="marathon"></div>
+    <div class="quests__wrapper">
+      <div class="quests__tabs">
+        <ul class="quests__tabs_list">
+          <li class="quests__tabs-item quests__tabs-item_state_active">Квесты</li>
+          <li class="quests__tabs-item quests__tabs-item-zavr">Победи Завра</li>
+        </ul>
+      </div>  
+      <div class="quests">
+        <div class="quests__all-for-the-day">
+          <img src="./imgs/target.svg" alt="Мишень">
+          <div class="all-for-the-day__content">
+            <h3 class="all-for-the-day__header">Всё за день</h3>
+            <div class="progress-bar"></div>
+          </div>
+          <img src="./imgs/Prize.svg" alt="Приз">
+        </div>
+        <div class="quests__daily-wrapper">
+          <div class="quests__card">
+            <div class="card__content">
+              <h4 class="card__content-header"> Решить 5 заданий в карточках по программированию</h4>
+              <img class="card__content-img" src="./imgs/Prize_M.svg" alt="Приз">
+            </div>
+            <button class="card__content-btn card__content-btn_type_done">Готово <img src="./imgs/check_circle.svg" alt="Приз"></button>
+          </div>
+          <div class="quests__card">
+            <div class="card__content">
+              <h4 class="card__content-header">Заработать 5 монет</h4>
+              <img class="card__content-img" src="./imgs/Prize_M.svg" alt="Приз">
+            </div>
+            <button class="card__content-btn">Выполнить</button>
+          </div>
+          <div class="quests__card">
+            <div class="card__content">
+              <h4 class="card__content-header">Решить 5 карточек по английскому языку</h4>
+              <img class="card__content-img" src="./imgs/Prize_M.svg" alt="Приз">
+            </div>
+            <button class="card__content-btn card__content-btn_type_secondary">Забрать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
